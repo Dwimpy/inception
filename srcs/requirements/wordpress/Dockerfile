@@ -7,8 +7,7 @@ RUN apt-get install -y \
     curl \
     wget
 
-RUN mkdir /var/www
-RUN mkdir /var/www/html
+RUN mkdir -p /var/www/html
 
 COPY ./tools/wordpress.sh /
 
