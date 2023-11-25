@@ -26,8 +26,8 @@ wp config create --allow-root --dbname=$MARIADB_NAME \
 wp core install --allow-root \
   --url=127.0.0.1\
   --title=$WP_TITLE \
-  --admin_user=WP_ADMIN_USR \
-  --admin_password=WP_ADMIN_PWD \
+  --admin_user=$WP_ADMIN_USR \
+  --admin_password=$WP_ADMIN_PWD \
   --admin_email=$WP_ADMIN_EMAIL
 
 
